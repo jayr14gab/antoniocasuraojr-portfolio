@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Casurao Jr. | Graphic Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a1a2e',
+                        accent: '#e94560',
+                        light: '#f8f9fa',
+                        dark: '#0f0f1e',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                    },
+                },
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+            .card-hover { transition: all 0.3s ease; }
+            .card-hover:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(233, 69, 96, 0.2); }
+        }
+    </style>
+</head>
+<body class="bg-light text-gray-800 font-sans">
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-br from-primary to-dark text-white min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-6 md:px-12 py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="font-display text-5xl md:text-7xl font-bold mb-4 tracking-tight">
+                    Antonio Casurao Jr.
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-200 mb-6">Graphic Designer</h2>
+                <p class="text-xl md:text-2xl font-bold text-accent mb-8">Creative Designs. Bold Ideas. Lasting Impressions.</p>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    I create compelling visual designs that help brands communicate, connect, and stand out. From billboard layouts and advertising materials to logos and promotional banners, I turn ideas into clear, engaging visual experiences.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#work" class="bg-accent hover:bg-[#d03a54] text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg">
+                        EXPLORE MY WORK
+                    </a>
+                    <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white/10 text-white font-bold py-3 px-8 rounded-full transition-all">
+                        LET'S CONNECT
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Work Section -->
+    <section id="work" class="py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-primary mb-4">Featured Work</h2>
+                <div class="w-24 h-1 bg-accent mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Billboard Design -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 bg-gradient-to-r from-blue-600 to-indigo-600 flex items-center justify-center text-white text-5xl">
+                        <i class="fa fa-th-large"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Billboard Design</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Bold, attention-grabbing layouts designed to communicate messages clearly in large-format advertising.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Advertising Design -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 bg-gradient-to-r from-pink-500 to-rose-500 flex items-center justify-center text-white text-5xl">
+                        <i class="fa fa-bullhorn"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Advertising Design</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Creative promotional graphics and advertising layouts that capture attention and communicate key messages.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Logo Design -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 bg-gradient-to-r from-emerald-500 to-teal-500 flex items-center justify-center text-white text-5xl">
+                        <i class="fa fa-paint-brush"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Logo Design</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Distinctive logo concepts and visual identities designed to represent a brand's personality.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Banners & Promotions -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 bg-gradient-to-r from-amber-500 to-orange-500 flex items-center justify-center text-white text-5xl">
+                        <i class="fa fa-flag"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Banners & Promotions</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Eye-catching banners and promotional materials for businesses, campaigns, and events.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-primary mb-8 text-center">About Me</h2>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                        I'm <strong class="text-accent">Antonio Casurao Jr.</strong>, a Graphic Designer passionate about creating visually engaging designs with strong typography, thoughtful layouts, and a clear message.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                        My portfolio focuses on billboard layouts, advertisements, logo concepts, and banners. I aim to create designs that balance creativity with readability and visual impact.
+                    </p>
+                    <p class="text-lg text-gray-700 italic border-l-4 border-accent pl-4 py-2">
+                        I believe great design is not just about looking good — it's about communicating effectively and making a memorable impression.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">Let's Work Together</h2>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
+                    Have a project, an idea, or a brand that needs a creative touch?<br>
+                    I'd love to hear about it. Get in touch to discuss your design needs and explore how we can bring your ideas to life.
+                </p>
+                <div class="space-y-4 text-lg">
+                    <p class="flex items-center justify-center gap-3">
+                        <i class="fa fa-envelope text-accent text-xl"></i>
+                        <span>Email: <a href="mailto:your.email@example.com" class="text-accent hover:underline">[jayrcasurao@gmail.com]</a></span>
+                    </p>
+                    <p class="flex items-center justify-center gap-3">
+                        <i class="fa fa-facebook-square text-accent text-xl"></i>
+                        <span>Facebook: <a href="#" class="text-accent hover:underline">[https://www.facebook.com/share/1JBBJjFCZZ/]</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-400 py-8 text-center">
+        <p>© Antonio Casurao Jr. — Graphic Design Portfolio</p>
+    </footer>
+
+    <!-- Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
